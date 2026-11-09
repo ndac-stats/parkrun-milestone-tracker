@@ -1,4 +1,4 @@
-const MILESTONES = [10, 25, 50, 100, 250, 500, 1000];
+const MILESTONES = [10, 25, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 1000];
 const DATA_URL = "data/milestones.json";
 
 const el = (id) => document.getElementById(id);
