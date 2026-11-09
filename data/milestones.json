@@ -1,0 +1,20 @@
+{
+  "updated_at": null,
+  "note": "Sample data only. Replace the example athlete IDs in config/athletes.csv and run the update workflow.",
+  "runners": [
+    {
+      "athlete_id": "1234567",
+      "name": "Example Runner One",
+      "total_runs": 49,
+      "last_run_date": null,
+      "profile_url": "https://www.parkrun.com.au/parkrunner/1234567/"
+    },
+    {
+      "athlete_id": "2345678",
+      "name": "Example Runner Two",
+      "total_runs": 102,
+      "last_run_date": null,
+      "profile_url": "https://www.parkrun.com.au/parkrunner/2345678/"
+    }
+  ]
+}

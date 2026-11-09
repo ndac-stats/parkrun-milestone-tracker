@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087e68">
+  <title>parkrun Milestone Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">YOUR RUNNING COMMUNITY</p>
+      <h1>parkrun Milestone Tracker</h1>
+      <p class="intro">See who’s reached a parkrun milestone and who’s getting close.</p>
+      <div class="updated" id="updated">Loading latest results…</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="stats" aria-label="Club summary">
+      <article class="stat"><span class="stat-label">Tracked parkrunners</span><strong id="runnerCount">—</strong></article>
+      <article class="stat"><span class="stat-label">Milestones reached</span><strong id="milestoneCount">—</strong></article>
+      <article class="stat"><span class="stat-label">Closest to next milestone</span><strong id="closestRunner">—</strong></article>
+    </section>
+
+    <section class="toolbar">
+      <div>
+        <h2>Milestone leaderboard</h2>
+        <p class="muted">Run milestones are based on each athlete’s total parkrun finishes.</p>
+      </div>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search name or athlete ID" aria-label="Search name or athlete ID">
+        <select id="filter" aria-label="Filter runners">
+          <option value="all">Everyone</option>
+          <option value="milestone">Milestone reached</option>
+          <option value="close">Within 5 runs</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="message" class="message" role="status"></div>
+    <div class="table-shell">
+      <table>
+        <thead><tr><th>parkrunner</th><th>Runs</th><th>Milestones</th><th>Next milestone</th><th>Progress</th></tr></thead>
+        <tbody id="results"><tr><td colspan="5">Loading…</td></tr></tbody>
+      </table>
+    </div>
+    <p class="footnote">Data is a snapshot from the last successful scheduled update. Always check the official parkrun profile for the latest result.</p>
+  </main>
+  <footer><div class="wrap">Made for celebrating every parkrun achievement. <span>Not affiliated with parkrun.</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
