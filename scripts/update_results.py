@@ -22,7 +22,20 @@ BASE_URL = "https://www.parkrun.com.au/results/athleteresultshistory/"
 HEADERS = {
     "User-Agent": "CommunityMilestoneTracker/1.0 (weekly public-results snapshot)"
 }
-MILESTONES = [10, 25, 50, 100, 250, 500, 1000]
+MILESTONES = [
+    10,
+    25,
+    50,
+    100,
+    150,
+    200,
+    250,
+    300,
+    350,
+    400,
+    450,
+    500,
+    1000]
 
 
 def read_athletes():
